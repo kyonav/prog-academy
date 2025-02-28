@@ -1,0 +1,14 @@
+/home/kyoto/studies/knowledge_test/bin/Debug/net9.0/knowledge_test
+/home/kyoto/studies/knowledge_test/bin/Debug/net9.0/knowledge_test.deps.json
+/home/kyoto/studies/knowledge_test/bin/Debug/net9.0/knowledge_test.runtimeconfig.json
+/home/kyoto/studies/knowledge_test/bin/Debug/net9.0/knowledge_test.dll
+/home/kyoto/studies/knowledge_test/bin/Debug/net9.0/knowledge_test.pdb
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/knowledge_test.GeneratedMSBuildEditorConfig.editorconfig
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/knowledge_test.AssemblyInfoInputs.cache
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/knowledge_test.AssemblyInfo.cs
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/knowledge_test.csproj.CoreCompileInputs.cache
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/knowledge_test.dll
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/refint/knowledge_test.dll
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/knowledge_test.pdb
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/knowledge_test.genruntimeconfig.cache
+/home/kyoto/studies/knowledge_test/obj/Debug/net9.0/ref/knowledge_test.dll
