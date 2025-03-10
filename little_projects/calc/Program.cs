@@ -17,6 +17,7 @@ class Program
             Console.WriteLine("2 - Subtract");
             Console.WriteLine("3 - Multiply");
             Console.WriteLine("4 - Divide");
+            Console.WriteLine("5 - Mult table");
             Console.WriteLine();
             Console.WriteLine("Q - Quit");
             Console.WriteLine();
@@ -27,6 +28,27 @@ class Program
                 return;
 
             }     
+
+            if (userInput == "5"){
+                Console.Clear();
+
+                Console.WriteLine("Multiplication table");
+                Console.WriteLine();
+
+                Console.Write("Type a number > ");
+
+                int num = 0;
+                num = Int32.Parse(Console.ReadLine());
+
+                for (int counter = 1; counter <= 10; counter++){
+                    int tabResult = num * counter;
+                    Console.WriteLine($"{num} x {counter} = {tabResult}");
+
+                }
+
+               Console.ReadLine();
+               continue;
+            }
 
             Console.Write("Type the 1st number: ");
             float firstNumber = Convert.ToInt32(Console.ReadLine());
