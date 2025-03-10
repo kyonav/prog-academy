@@ -4,37 +4,67 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Limited calc");
-        Console.WriteLine();
 
-        Console.WriteLine("1 - Sum");
-        Console.WriteLine("2 - Subtract");
-        Console.WriteLine();
-        Console.WriteLine("Q - Quit");
+        bool shouldRun = true;
 
-        string userInput = Console.ReadLine().ToUpper();
+        while (shouldRun == true){
+            Console.Clear();
 
-        if (userInput == "Q"){
-            return;
+            Console.WriteLine("Limited calc");
+            Console.WriteLine();
 
-        }     
+            Console.WriteLine("1 - Sum");
+            Console.WriteLine("2 - Subtract");
+            Console.WriteLine("3 - Multiply");
+            Console.WriteLine("4 - Divide");
+            Console.WriteLine();
+            Console.WriteLine("Q - Quit");
+            Console.WriteLine();
 
-        Console.Write("Type the 1st number: ");
-        int firstNumber = Convert.ToInt32(Console.ReadLine());
+            string userInput = Console.ReadLine().ToUpper();
 
-        Console.Write("Type the 2nd number: ");
-        int secondNumber = Convert.ToInt32(Console.ReadLine());
+            if (userInput == "Q"){
+                return;
 
-        int result = 0;
-        if (userInput == "1"){
-            result = firstNumber + secondNumber;
+            }     
 
-        } else if (userInput == "2"){
-            result = firstNumber - secondNumber;
+            Console.Write("Type the 1st number: ");
+            float firstNumber = Convert.ToInt32(Console.ReadLine());
 
+            Console.Write("Type the 2nd number: ");
+            float secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            float result = 0;
+            if (userInput == "1"){
+                result = firstNumber + secondNumber;
+
+            } else if (userInput == "2"){
+                result = firstNumber - secondNumber;
+
+            } else if (userInput == "3"){
+                result = firstNumber * secondNumber;
+
+            } else if (userInput == "4"){
+                    result = firstNumber / secondNumber;
+
+            }
+
+            if (secondNumber == 0){
+                Console.WriteLine("Cannot divide by zero.");
+                continue;
+
+            }
+
+            Console.WriteLine(result.ToString("F2"));
+            Console.WriteLine();
+
+            Console.Write("Continue? Y/N > ");
+            if (Console.ReadLine() != "Y"){
+                break;
+
+            }
         }
 
-        Console.WriteLine(result);
 
     }
 }
