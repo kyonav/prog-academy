@@ -34,12 +34,13 @@ dotnet build --configuration release_name
 dotnet run --project ???to_do???
 ```
 
-6. To run the compiled executable, navigate to `./prog-academy/little-projects/calc/bin/release_name/net-9.0/little-projects` and run:
+6. To run the compiled executable, cd into `./prog-academy/little-projects/calc/bin/release_name/net-9.0/little-projects` and run:
 
 Windows
 ```
 ./little-projects.exe
 ```
+or just run graphically by double clicking it in your file manager.
 
 Linux
 ```
