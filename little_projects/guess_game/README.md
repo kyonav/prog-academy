@@ -6,7 +6,21 @@
 
 A simple but fun guess game where you can try your luck.
 
-## How to play
+## Project
+
+Developed during the Fullstack course at [Academia do Programador](https://www.academiadoprogramador.net) 2025
+
+## Features
+
+- **Random number generator**
+- **Difficulty selection**
+- **Instant feedback**
+
+## Requirements
+
+- .NET SDK (recommended .NET 8.0 or higher) for compiling and running the project.
+
+## Compiling and running
 
 1. Clone the repo and download the source code.
 2. Open the terminal and navigate to the project folder.
@@ -19,7 +33,7 @@ dotnet restore
 4. Compile the project using the command:
 
 ```
-dotnet build --configuration Release
+dotnet build --configuration _Release_
 ```
 
 5. Execute the project compiling in real time.
@@ -28,14 +42,14 @@ dotnet build --configuration Release
 dotnet run --project ?
 ```
 
-6. To run the compiled executable, cd into `./prog-academy/little-projects/calc/bin/Release/net-9.0/little-projects` on your terminal and type:
+6. To run the compiled executable; cd into `./prog-academy/little-projects/calc/bin/_Release_/net-9.0/little-projects/` on your terminal and type:
 
-Windows
+> Windows
 ```
 ./little-projects.exe
 ```
 
-Linux
+> Linux
 ```
 ./little-projects
 ```
