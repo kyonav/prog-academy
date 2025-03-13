@@ -33,7 +33,7 @@ dotnet restore
 4. Compile the project using the command:
 
 ```
-dotnet build --configuration *Release*
+dotnet build --configuration Release
 ```
 
 5. Execute the project compiling in real time.
@@ -42,7 +42,7 @@ dotnet build --configuration *Release*
 dotnet run --project ?
 ```
 
-6. To run the compiled executable; cd into `./prog-academy/little-projects/calc/bin/*Release*/net-9.0/little-projects/` on your terminal and type:
+6. To run the compiled executable; cd into `./prog-academy/little-projects/calc/bin/Release/net-9.0/little-projects/` on your terminal and type:
 
 > Windows
 ```
@@ -54,6 +54,6 @@ dotnet run --project ?
 ./little-projects
 ```
 
-> *Or just run graphically by double clicking it on your file manager.*
+*Or just run graphically by double clicking it on your file manager.*
 
 TO-DO: Fix the project namespace.
