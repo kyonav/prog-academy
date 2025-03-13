@@ -117,8 +117,6 @@ namespace hangman_game {
 
                 }
 
-                Console.ReadLine();
-
             } while (playerHang == false && playerGuessed == false);
         }
     }
