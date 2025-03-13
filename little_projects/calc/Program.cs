@@ -18,7 +18,7 @@ class Program
         if (userInput == "5"){
             Console.Clear();
 
-            Console.WriteLine(" >>> Multiplication table <<<");
+            Console.WriteLine(" >>> Multiplication table <<");
             Console.WriteLine();
 
             Console.Write("Type a number > ");
@@ -76,9 +76,11 @@ class Program
         }
 
         // checks if the user wants to quit
-        if (userInput == "Q"){
-            Console.WriteLine("Quitting...");
+        if (userChooseToQuit(userInput)){
+            Console.Clear();
 
+            Console.WriteLine("Quitting...");
+            return;
         }
 
         Console.Write("Type the 1st number > ");
@@ -152,9 +154,16 @@ class Program
             Console.WriteLine();
 
             Console.Write("> ");
-            string userInput = Console.ReadLine()!.ToUpper();
+            string userInput = Console.ReadLine().ToUpper();
             return userInput;
 
         }
+    }
+
+    static bool userChooseToQuit(string opt){
+        bool userChooseToQuit = opt == "Q";
+        
+        return userChooseToQuit;
+
     }
 }
