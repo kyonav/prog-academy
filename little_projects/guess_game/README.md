@@ -42,7 +42,7 @@ dotnet build --configuration Release
 dotnet run --project ?
 ```
 
-6. To run the compiled executable; cd into `./prog-academy/little-projects/calc/bin/Release/net-9.0/little-projects/` on your terminal and type:
+6. To run the compiled executable; cd into `./prog-academy/little-projects/guess_game/bin/Release/net-9.0/little-projects/` on your terminal and type:
 
 > Windows
 ```
