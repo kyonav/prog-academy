@@ -1,4 +1,4 @@
-﻿namespace little_projects;
+﻿namespace calc;
 
 class Program
 {
@@ -6,7 +6,7 @@ class Program
     {
         Console.Clear();
 
-        string[] operHistory = new string[100];
+        
 
         int histCounter = 0;
         // prints the menu, then redirects to the selected option
@@ -21,58 +21,13 @@ class Program
             Console.WriteLine(" >>> Multiplication table <<");
             Console.WriteLine();
 
-            Console.Write("Type a number > ");
-
-            int num = 0;
-            num = Int32.Parse(Console.ReadLine());
-
-            Console.WriteLine();
-
-            for (int counter = 1; counter <= 10; counter++){
-                int tabResult = num * counter;
-                Console.WriteLine($"{num} x {counter} = {tabResult}");
-
-            } 
-
-            Console.WriteLine();
-
-            Console.WriteLine("Press enter to continue...");
-            Console.ReadLine();
-
-            Console.Clear();
+            
 
         }
 
         // prints the history operation
         if (userInput == "6"){
-            if (operHistory[0] != null){
-                Console.Clear();
-
-                Console.WriteLine(">>> Operation history <<<");
-                Console.WriteLine();
-
-                foreach (string item in operHistory){
-                    if (item != null){
-                        Console.WriteLine(item);
-
-                    }
-                }
-                Console.WriteLine();
-
-                Console.WriteLine("Press enter to continue...");
-                Console.ReadLine();
-
-                Console.Clear();
-
-
-            } else {
-                Console.Clear();
-
-                Console.WriteLine("The history is empty.");
-                Console.WriteLine();
-
-
-            }
+            
         }
 
         // checks if the user wants to quit
@@ -96,20 +51,16 @@ class Program
 
         float result = 0;
         if (userInput == "1"){
-            result = firstNumber + secondNumber;
-            operHistory[histCounter] = $"{firstNumber} + {secondNumber} = {result}";
+            result = Calculator.Sum(firstNumber, secondNumber);
 
         } else if (userInput == "2"){
-            result = firstNumber - secondNumber;
-            operHistory[histCounter] = $"{firstNumber} - {secondNumber} = {result}";
+            result = Calculator.Sub(firstNumber, secondNumber);
 
         } else if (userInput == "3"){
-            result = firstNumber * secondNumber;
-            operHistory[histCounter] = $"{firstNumber} * {secondNumber} = {result}";
+            result = Calculator.Mult(firstNumber, secondNumber);
 
         } else if (userInput == "4"){
-            result = firstNumber / secondNumber;
-            operHistory[histCounter] = $"{firstNumber} / {secondNumber} = {result}";
+            result = Calculator.Div(firstNumber, secondNumber);
 
         } else {
             Console.Clear();
@@ -164,6 +115,11 @@ class Program
         bool userChooseToQuit = opt == "Q";
         
         return userChooseToQuit;
+
+    }
+
+    static bool()
+    {
 
     }
 }
