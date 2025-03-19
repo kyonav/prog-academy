@@ -9,31 +9,45 @@ namespace hangman_game
             string randomWord = Functions.RandomWordPicker(wordsArray);
             char[] foundLetters = Functions.FoundLettersArray(randomWord);
 
-            if (Functions.GameMenuMain() == "2")
-            {
-                int errorsQtt = 0;
-                string foundWord = "";
+            int errorsQtt = 0;
+            string foundWord = "";
+            
+            Functions.GameMenuMain();
+            string userInputString = AskForUserInputMenu();
 
+            Console.Clear();
+
+            if (userInputString == "1")
+            {
                 do
                 {
+                Functions.PrintGameMain(errorsQtt, foundLetters, randomWord);
 
-                    Functions.PrintGameMain(errorsQtt, foundLetters, randomWord);
-                    char userInput = AskForUserInputIngame();
-                    errorsQtt = Functions.CheckIfLetterWasFound(randomWord, userInput, foundLetters, errorsQtt);
-                    foundWord = Functions.MountWordByChar(foundWord, foundLetters);
-                    Functions.PlayerWonLose(foundWord, randomWord, errorsQtt);      
+                char userInput = AskForUserInputIngame();
+                errorsQtt = Functions.CheckIfLetterWasFound(randomWord, userInput, foundLetters, errorsQtt);
+                foundWord = Functions.MountWordByChar(foundWord, foundLetters);
+                Functions.PlayerWonLose(foundWord, randomWord, errorsQtt);
+
+                Console.Clear();
+
+                } while (true);
                     
-                } while (true);               
             }
-            else if (Functions.GameMenuMain() == "2")
-            {
-                Functions.ExitProgram();
-            }
-            else
-            {
-                Functions.InputTreatment(Console.ReadLine()!);
-                Main(); 
-            }
+
+                else if (userInputString == "2")
+                {
+                    Console.WriteLine("Closing program...");
+                    return;
+                }
+                else
+                {
+                    Console.Clear();
+
+                    Console.WriteLine("Invalid input. Try again.");
+                    Main();
+                }
+
+            
         }
 
         // user interactions on main
@@ -43,8 +57,8 @@ namespace hangman_game
 
             Console.Write("> ");
             string userInput = Console.ReadLine()!;
-            return Functions.InputTreatment(userInput) ? userInput : "a";
 
+            return userInput;
            
         }
 
@@ -56,7 +70,6 @@ namespace hangman_game
             char userGuessChar = Char.Parse(Console.ReadLine().ToUpper());
 
             Console.WriteLine(userGuessChar);
-            Console.ReadLine();
 
             return userGuessChar;
         }

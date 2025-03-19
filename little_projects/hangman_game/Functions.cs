@@ -62,7 +62,7 @@ namespace hangman_game
         }
 
         // console display and var storage on functions
-        public static string GameMenuMain()
+        public static void GameMenuMain()
         {
             Console.WriteLine("______________________________________________");
             Console.WriteLine();
@@ -77,7 +77,6 @@ namespace hangman_game
             Console.WriteLine("(2) Exit");
             Console.WriteLine("______________________________________________");
 
-            return Program.AskForUserInputMenu();
         }
 
         public static void PrintGameMain(int errorsQtt, char[] foundLetters, string randomWord)
@@ -159,9 +158,6 @@ namespace hangman_game
                 Console.WriteLine();
 
                 Console.WriteLine($"You Won! the word was {randomWord}");
-                Console.WriteLine("______________________________________________");
-                Console.WriteLine();
-
                 Program.Main();
 
             }
@@ -169,45 +165,11 @@ namespace hangman_game
             {
                 Console.Clear();
 
-                Console.WriteLine("______________________________________________");
                 Console.WriteLine();
 
                 Console.WriteLine($"You Lost. the word was {randomWord}");
-                Console.WriteLine("______________________________________________");
-                Console.WriteLine();
-
                 Program.Main();
 
-            }
-        }
-
-        public static bool InputTreatment(string userInput)
-        {
-
-            if (userInput != null)
-            {
-                if (Int32.TryParse(userInput, out _))
-                {
-                    return true;
-                }
-                else
-                {
-                    Console.Clear();
-
-                    Console.WriteLine("Invalid input. Try again.");
-                    Program.Main(); return false;      
-                    // nao sei como isso aq faz o menor sentido
-                    // so sei q se eu tiro o program.main ele 
-                    // da readline 2x kk              
-                }
-            }
-            else
-            {
-
-                Console.Clear();
-
-                Console.WriteLine("Null input detected. Try again.");
-                Program.Main(); return false;
             }
         }
 
