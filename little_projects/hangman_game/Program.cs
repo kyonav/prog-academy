@@ -1,123 +1,77 @@
-namespace hangman_game {
-    internal class Program {
-        static void Main(string[] args){
-            string[] words = {
-                "ABACATE",
-                "ABACAXI",
-                "ACEROLA",
-                "ACAI",
-                "ARACA",
-                "ABACATE",
-                "BACABA",
-                "BACURI",
-                "BANANA",
-                "CAJA",
-                "CAJU",
-                "CARAMBOLA",
-                "CUPUACU",
-                "GRAVIOLA",
-                "GOIABA",
-                "JABUTICABA",
-                "JENIPAPO",
-                "MACA",
-                "MANGABA",
-                "MANGA",
-                "MARACUJA",
-                "MURICI",
-                "PEQUI",
-                "PITANGA",
-                "PITAYA",
-                "SAPOTI",
-                "TANGERINA",
-                "UMBU",
-                "UVA",
-                "UVAIA"
-            };
-
-            Random random = new Random();
-
-            int randomIndex = random.Next(words.Length);
-
-            string randomWord = words[randomIndex];
-
-            char[] foundLetters = new char[randomWord.Length];
-
-            for (int c= 0; c < foundLetters.Length; c++){
-                foundLetters[c] = '_';
-
-            }
+namespace hangman_game
+{
+    internal class Program
+    {
+        internal static void Main()
+        {
+            //returning array values
+            string[] wordsArray = Functions.WordsArray();
+            string randomWord = Functions.RandomWordPicker(wordsArray);
+            char[] foundLetters = Functions.FoundLettersArray(randomWord);
 
             int errorsQtt = 0;
-            bool playerHang = false;
-            bool playerGuessed = false;
+            string foundWord = "";
+            
+            Functions.GameMenuMain();
+            string userInputString = AskForUserInputMenu();
 
-            do{
-                string playerHead = errorsQtt >= 1 ? " o " : " ";
-                string body = errorsQtt >= 2 ? "x" : " ";
-                string lowBody = errorsQtt >= 2 ? " x " : " ";
-                string leftArm = errorsQtt >= 3 ? "/" : " ";
-                string rightArm = errorsQtt >= 4 ? @"\" : " ";
-                string legs = errorsQtt >= 5 ? "/ \\" : " ";
+            Console.Clear();
+
+            if (userInputString == "1")
+            {
+                do
+                {
+                Functions.PrintGameMain(errorsQtt, foundLetters, randomWord);
+
+                char userInput = AskForUserInputIngame();
+                errorsQtt = Functions.CheckIfLetterWasFound(randomWord, userInput, foundLetters, errorsQtt);
+                foundWord = Functions.MountWordByChar(foundWord, foundLetters);
+                Functions.PlayerWonLose(foundWord, randomWord, errorsQtt);
 
                 Console.Clear();
-                Console.WriteLine("----------------------------------------------");
-                Console.WriteLine("Hangman Game!");
-                Console.WriteLine("----------------------------------------------");
-                Console.WriteLine(" ___________        ");
-                Console.WriteLine(" |/        |        ");
-                Console.WriteLine(" |        {0}       ", playerHead);
-                Console.WriteLine(" |        {0}{1}{2} ", leftArm, body, rightArm);
-                Console.WriteLine(" |        {0}       ", lowBody);
-                Console.WriteLine(" |        {0}       ", legs);
-                Console.WriteLine(" |                  ");
-                Console.WriteLine(" |                  ");
-                Console.WriteLine("_|____              ");
-                Console.WriteLine("----------------------------------------------");
-                Console.WriteLine("Guessed letters: " + errorsQtt);
-                Console.WriteLine("----------------------------------------------");
-                Console.WriteLine("Choose word: " + String.Join("", foundLetters));
-                Console.WriteLine("----------------------------------------------");
 
-                Console.Write("Type a letter: ");
-                char guess = Console.ReadLine()!.ToUpper()[0];
-
-                bool letterWasFound = false;
-
-                for (int counter = 0; counter < randomWord.Length; counter++){
-                    char thisLetter = randomWord[counter];
-
-                    if (guess == thisLetter){
-                        foundLetters[counter] = thisLetter;
-                        letterWasFound = true;
-
-                    }
-                }
-
-                if (letterWasFound  == false){
-                    errorsQtt++;
+                } while (true);
                     
+            }
+
+                else if (userInputString == "2")
+                {
+                    Console.WriteLine("Closing program...");
+                    return;
+                }
+                else
+                {
+                    Console.Clear();
+
+                    Console.WriteLine("Invalid input. Try again.");
+                    Main();
                 }
 
-                string foundWord  = String.Join("", foundLetters);
+            
+        }
 
-                playerGuessed = foundWord == randomWord;
-                playerHang = errorsQtt > 5;
+        // user interactions on main
+        public static string AskForUserInputMenu()
+        {
+            Console.WriteLine();
 
-                if (playerGuessed){
-                    Console.WriteLine("----------------------------------------------");
-                    Console.WriteLine($"You got it! the random word was {randomWord}.");
-                    Console.WriteLine("----------------------------------------------");
+            Console.Write("> ");
+            string userInput = Console.ReadLine()!;
 
-                }
+            return userInput;
+           
+        }
 
-                else if (playerHang){
-                    Console.WriteLine("----------------------------------------------");
-                    Console.WriteLine("Unlucky! Try again!");
-                    Console.WriteLine("----------------------------------------------");
+        public static char AskForUserInputIngame()
+        {
+            Console.WriteLine();
 
-                }
+            Console.Write("> ");
+            char userGuessChar = Char.Parse(Console.ReadLine().ToUpper());
 
-            } while (playerHang == false && playerGuessed == false);
+            Console.WriteLine(userGuessChar);
+
+            return userGuessChar;
         }
     }
 }
