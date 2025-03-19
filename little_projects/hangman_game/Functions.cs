@@ -165,6 +165,7 @@ namespace hangman_game
             {
                 Console.Clear();
 
+                Console.WriteLine("______________________________________________");
                 Console.WriteLine();
 
                 Console.WriteLine($"You Lost. the word was {randomWord}");

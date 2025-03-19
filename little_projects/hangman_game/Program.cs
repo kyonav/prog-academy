@@ -37,7 +37,6 @@ namespace hangman_game
                 else if (userInputString == "2")
                 {
                     Console.WriteLine("Closing program...");
-                    return;
                 }
                 else
                 {
@@ -45,9 +44,7 @@ namespace hangman_game
 
                     Console.WriteLine("Invalid input. Try again.");
                     Main();
-                }
-
-            
+                }           
         }
 
         // user interactions on main
