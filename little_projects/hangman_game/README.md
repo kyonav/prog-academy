@@ -1,6 +1,6 @@
 # Low budget Hangman Game!
 
-![](./misc/app_running.gif)
+![](https://i.imgur.com/aZISJqw.gif)
 
 ## Introduction
 
@@ -39,7 +39,7 @@ dotnet build --configuration Release
 5. Execute the project compiling in real time.
 
 ```
-dotnet run --project ?
+dotnet run --project hangman_game
 ```
 
 6. To run the compiled executable; cd into `./prog-academy/little-projects/hangman_game/bin/Release/net-9.0/little-projects/` on your terminal and type:
