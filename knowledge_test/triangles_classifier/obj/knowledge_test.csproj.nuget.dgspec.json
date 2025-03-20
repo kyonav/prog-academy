@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/kyoto/studies/knowledge_test/knowledge_test.csproj": {}
+    "C:\\Users\\ynv\\source\\repos\\prog-academy\\knowledge_test\\triangles_classifier\\knowledge_test.csproj": {}
   },
   "projects": {
-    "/home/kyoto/studies/knowledge_test/knowledge_test.csproj": {
+    "C:\\Users\\ynv\\source\\repos\\prog-academy\\knowledge_test\\triangles_classifier\\knowledge_test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kyoto/studies/knowledge_test/knowledge_test.csproj",
+        "projectUniqueName": "C:\\Users\\ynv\\source\\repos\\prog-academy\\knowledge_test\\triangles_classifier\\knowledge_test.csproj",
         "projectName": "knowledge_test",
-        "projectPath": "/home/kyoto/studies/knowledge_test/knowledge_test.csproj",
-        "packagesPath": "/home/kyoto/.nuget/packages/",
-        "outputPath": "/home/kyoto/studies/knowledge_test/obj/",
+        "projectPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\knowledge_test\\triangles_classifier\\knowledge_test.csproj",
+        "packagesPath": "C:\\Users\\ynv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\knowledge_test\\triangles_classifier\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/kyoto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ynv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -54,18 +60,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.2, 9.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
