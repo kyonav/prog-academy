@@ -1,4 +1,4 @@
-# Low budget Hangman Game!
+# Low budget Triangle Classifier!
 
 ![](https://i.imgur.com/rFn1RA1.gif)
 
