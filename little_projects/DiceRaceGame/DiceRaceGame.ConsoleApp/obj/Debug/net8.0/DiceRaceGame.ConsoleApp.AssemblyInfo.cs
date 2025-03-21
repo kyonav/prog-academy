@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiceRaceGame.ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+230094eb7d03a6469f05802370b7de5892381c4d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d481730fbf63d24acf5ea2813e8e5da989bc4935")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiceRaceGame.ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiceRaceGame.ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

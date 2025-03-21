@@ -1,18 +1,15 @@
-﻿using System.Runtime.ExceptionServices;
-using System.Text;
-
-namespace DiceRaceGame.ConsoleApp;
+﻿namespace DiceRaceGame.ConsoleApp;
 // zvaI TOMAR NO CU 
 internal class DiceRaceGame
 {
     public static void MenuRun()
     {
         int newPlayerPos = 0; int newCpuPos = 0;
+        string[] playerNCpuPosArray = new string[30];
 
         do
         {
-            string[] playerNCpuPosArray = new string[30];
-
+            Console.Clear();       
             for (int i = 0; i < playerNCpuPosArray.Length; i++)
             {
                 playerNCpuPosArray[i] = " ___ ";
@@ -23,15 +20,7 @@ internal class DiceRaceGame
 
             int cpuRng = RunRollDice();
             newCpuPos += cpuRng;
-
-            Console.WriteLine();
-            Console.WriteLine("_______________________________________");
-            Console.WriteLine();
-            Console.WriteLine("Press any key to rng");
-            Console.WriteLine("_______________________________________");
-            Console.WriteLine();
-
-            Console.ReadLine();
+           
             Console.WriteLine($"Player rolled {playerRng} | Player unit > {newPlayerPos}");
             Console.WriteLine();
             Console.WriteLine($"CPU rolled {cpuRng} | CPU unit > {newCpuPos}");
@@ -39,7 +28,9 @@ internal class DiceRaceGame
 
             newPlayerPos = UpdatePlayerNCpuPosArrayPlayer(playerNCpuPosArray, newPlayerPos);
             newCpuPos = UpdatePlayerNCpuPosArrayCpu(playerNCpuPosArray, newCpuPos);
-
+                      
+            playerNCpuPosArray = UpdatePlayerNCpuPosArrayIdem(playerNCpuPosArray, newPlayerPos, newCpuPos);
+            
             foreach (string stringChar in playerNCpuPosArray)
             {
                 Console.Write(stringChar);
@@ -64,6 +55,12 @@ internal class DiceRaceGame
                     Console.Write($"  {unitPrint + 1} ");
                 }
             }
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________");
+            Console.WriteLine();
+            Console.Write("Type enter to continue");
+            Console.ReadLine();
         } while (true);
     }
 
@@ -75,12 +72,6 @@ internal class DiceRaceGame
         //int rngNum = Random.Next(1, 7);
 
         return rngNum;
-    }
-
-    private static bool sOnTheNameUnit()
-    {
-
-        return;
     }
 
     public static int UpdatePlayerNCpuPosArrayPlayer(string[] playerNCpuPosArray, int playerPos)
@@ -113,6 +104,23 @@ internal class DiceRaceGame
             }
         }
         return cpuPos;
+    }
+
+    private static string[] UpdatePlayerNCpuPosArrayIdem(string[] playerNCpuPosArray, int newPlayerPos, int newCpuPos)
+    {
+        for (int value = 0; value < playerNCpuPosArray.Length; value++)
+        {
+            if (newPlayerPos == newCpuPos)
+            {
+                int constValue = newPlayerPos;
+                playerNCpuPosArray[constValue -1] = " _~_ ";
+
+                Console.WriteLine("Player and CPU are on the same unit!");
+                break;
+
+            }
+        }
+        return playerNCpuPosArray;
     }
 
     public static int RunEventCheckerPlayer(int playerPos)

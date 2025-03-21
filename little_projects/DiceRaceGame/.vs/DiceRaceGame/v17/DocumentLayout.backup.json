@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\DiceRaceGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63EEFDF0-C864-4BCE-9B73-272650A7486C}|DiceRaceGame.ConsoleApp\\DiceRaceGame.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\diceracegame\\diceracegame.consoleapp\\dicericegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EEFDF0-C864-4BCE-9B73-272650A7486C}|DiceRaceGame.ConsoleApp\\DiceRaceGame.ConsoleApp.csproj|solutionrelative:diceracegame.consoleapp\\dicericegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63EEFDF0-C864-4BCE-9B73-272650A7486C}|DiceRaceGame.ConsoleApp\\DiceRaceGame.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\diceracegame\\diceracegame.consoleapp\\diceracegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EEFDF0-C864-4BCE-9B73-272650A7486C}|DiceRaceGame.ConsoleApp\\DiceRaceGame.ConsoleApp.csproj|solutionrelative:diceracegame.consoleapp\\diceracegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63EEFDF0-C864-4BCE-9B73-272650A7486C}|DiceRaceGame.ConsoleApp\\DiceRaceGame.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\diceracegame\\diceracegame.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,17 +38,18 @@
               "RelativeToolTip": "DiceRaceGame.ConsoleApp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:51:59.717Z"
+              "WhenOpened": "2025-03-20T17:51:59.717Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DiceRiceGame.cs",
-              "DocumentMoniker": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\DiceRaceGame\\DiceRaceGame.ConsoleApp\\DiceRiceGame.cs",
-              "RelativeDocumentMoniker": "DiceRaceGame.ConsoleApp\\DiceRiceGame.cs",
-              "ToolTip": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\DiceRaceGame\\DiceRaceGame.ConsoleApp\\DiceRiceGame.cs",
-              "RelativeToolTip": "DiceRaceGame.ConsoleApp\\DiceRiceGame.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAgwE8AAAAYAAAAAAAAAA==",
+              "Title": "DiceRaceGame.cs",
+              "DocumentMoniker": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\DiceRaceGame\\DiceRaceGame.ConsoleApp\\DiceRaceGame.cs",
+              "RelativeDocumentMoniker": "DiceRaceGame.ConsoleApp\\DiceRaceGame.cs",
+              "ToolTip": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\DiceRaceGame\\DiceRaceGame.ConsoleApp\\DiceRaceGame.cs",
+              "RelativeToolTip": "DiceRaceGame.ConsoleApp\\DiceRaceGame.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwHMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T17:55:26.91Z",
               "EditorCaption": ""
