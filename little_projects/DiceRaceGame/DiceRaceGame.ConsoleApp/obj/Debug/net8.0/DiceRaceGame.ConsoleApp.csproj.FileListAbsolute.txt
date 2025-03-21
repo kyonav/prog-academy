@@ -1,0 +1,15 @@
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\bin\Debug\net8.0\DiceRaceGame.ConsoleApp.exe
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\bin\Debug\net8.0\DiceRaceGame.ConsoleApp.deps.json
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\bin\Debug\net8.0\DiceRaceGame.ConsoleApp.runtimeconfig.json
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\bin\Debug\net8.0\DiceRaceGame.ConsoleApp.dll
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\bin\Debug\net8.0\DiceRaceGame.ConsoleApp.pdb
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.AssemblyInfo.cs
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.sourcelink.json
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.dll
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\refint\DiceRaceGame.ConsoleApp.dll
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.pdb
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\DiceRaceGame.ConsoleApp.genruntimeconfig.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\DiceRaceGame\DiceRaceGame.ConsoleApp\obj\Debug\net8.0\ref\DiceRaceGame.ConsoleApp.dll
