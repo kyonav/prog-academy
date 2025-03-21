@@ -13,6 +13,11 @@ internal class DiceRaceGame
         {
             string[] playerNCpuPosArray = new string[30];
 
+            for (int i = 0; i < playerNCpuPosArray.Length; i++)
+            {
+                playerNCpuPosArray[i] = " ___ ";
+            }
+
             int playerRng = RunRollDice();
             newPlayerPos += playerRng;
 
@@ -72,49 +77,38 @@ internal class DiceRaceGame
         return rngNum;
     }
 
+    private static bool sOnTheNameUnit()
+    {
+
+        return;
+    }
+
     public static int UpdatePlayerNCpuPosArrayPlayer(string[] playerNCpuPosArray, int playerPos)
     {
         for (int value = 0; value < playerNCpuPosArray.Length; value++)
         {
-            if (value != playerPos)
+            if (value == playerPos)
             {
-                playerNCpuPosArray[value] = " ___ ";
-            } else
-            {             
-                if (playerPos == value)
+                if (playerNCpuPosArray[playerPos] == " ___ ")
                 {
-                    playerPos = RunEventCheckerPlayer(playerPos);
                     int constPlayerPos = playerPos;
                     playerNCpuPosArray[constPlayerPos -1] = " _*_ ";
                 }
-            }
+            } 
         }
         return playerPos;
-    }
-
-    public static void storeCpuChar()
-    {
-
     }
 
     public static int UpdatePlayerNCpuPosArrayCpu(string[] playerNCpuPosArray, int cpuPos)
     {
         for (int value = 0; value < playerNCpuPosArray.Length; value++)
         {
-
-
-            if (value != cpuPos)
+            if (value == cpuPos)
             {
-                playerNCpuPosArray[value] = " ___ ";
-            }
-            else
-            {
-                if (cpuPos == value)
+                if (playerNCpuPosArray[cpuPos] == " ___ ")
                 {
-                    
-                    cpuPos = RunEventCheckerCpu(cpuPos);
                     int constCpuPos = cpuPos;
-                    playerNCpuPosArray[constCpuPos -1] = " _+_ ";
+                    playerNCpuPosArray[constCpuPos - 1] = " _+_ ";
                 }
             }
         }
