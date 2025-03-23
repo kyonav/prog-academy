@@ -1,15 +1,96 @@
 ﻿namespace DiceRaceGame.ConsoleApp;
-// zvaI TOMAR NO CU 
+
 internal class DiceRaceGame
 {
-    public static void MenuRun()
+
+    public static void AppMenuMain()
+    {
+        Console.WriteLine("_________________________________________");
+        Console.WriteLine();
+        Console.WriteLine(" Low budget Dice Race Game!");
+        Console.WriteLine();
+        Console.WriteLine(" (1) Start");
+        Console.WriteLine(" (2) Help");
+        Console.WriteLine();
+        Console.WriteLine(" (0) Quit");
+        Console.WriteLine("_________________________________________");
+        Console.WriteLine();
+
+        Console.WriteLine("_________________________________________");
+        Console.WriteLine();
+        Console.WriteLine(" What do you wish to do? (1, 2 or 0)");
+        Console.Write(" > ");
+        string userInput = Console.ReadLine()!;
+        Console.WriteLine();
+
+        if (userInput != null)
+        {
+            if (userInput == "1")
+            {
+                AppMenuRun();
+            }
+            else if (userInput == "2")
+            {
+                AppMenuHelp();
+            }
+            else if (userInput == "0")
+            {
+                Console.Clear();
+
+                Console.WriteLine("________________________");
+                Console.WriteLine();
+                Console.WriteLine(" Exiting program...");
+                Console.WriteLine("________________________");
+                Console.WriteLine();
+
+                Environment.Exit(0);
+            }
+            else
+            {
+                Console.Clear();
+
+                Console.WriteLine("________________________________");
+                Console.WriteLine();
+                Console.WriteLine(" Invalid option. Try again.");
+                Console.WriteLine("________________________________");
+                Console.WriteLine();
+
+                AppMenuMain();
+            }
+        }
+        else
+        {
+            Console.Clear();
+
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine();
+            Console.WriteLine(" Null input detected. Try again.");
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine();
+
+            AppMenuMain();
+        }
+    }
+
+    public static void AppMenuRun()
     {
         int newPlayerPos = 0; int newCpuPos = 0;
         string[] playerNCpuPosArray = new string[30];
 
         do
         {
-            Console.Clear();       
+            do
+            {
+                Console.Clear();
+
+                Console.WriteLine("___________________________");
+                Console.WriteLine();
+                Console.WriteLine(" Press (ENTER) to rng!");
+                Console.WriteLine("___________________________");
+                Console.WriteLine();
+
+            } while (Console.ReadKey().Key != ConsoleKey.Enter);
+
             for (int i = 0; i < playerNCpuPosArray.Length; i++)
             {
                 playerNCpuPosArray[i] = " ___ ";
@@ -20,21 +101,25 @@ internal class DiceRaceGame
 
             int cpuRng = RunRollDice();
             newCpuPos += cpuRng;
-           
-            Console.WriteLine($"Player rolled {playerRng} | Player unit > {newPlayerPos}");
+
+            Console.WriteLine($" Player rolled {playerRng} | Player unit > {newPlayerPos}");
             Console.WriteLine();
-            Console.WriteLine($"CPU rolled {cpuRng} | CPU unit > {newCpuPos}");
+            Console.WriteLine($" CPU rolled {cpuRng} | CPU unit > {newCpuPos}");
             Console.WriteLine();
 
+            RunEventCheckerDraw(newPlayerPos, newCpuPos);
+
+            RunCheckIfGameEnded(newPlayerPos, newCpuPos);
+
+            newCpuPos = UpdatePlayerNCpuPosArrayCpu(playerNCpuPosArray, newCpuPos);                  
             newPlayerPos = UpdatePlayerNCpuPosArrayPlayer(playerNCpuPosArray, newPlayerPos);
-            newCpuPos = UpdatePlayerNCpuPosArrayCpu(playerNCpuPosArray, newCpuPos);
-                      
-            playerNCpuPosArray = UpdatePlayerNCpuPosArrayIdem(playerNCpuPosArray, newPlayerPos, newCpuPos);
             
+            playerNCpuPosArray = UpdatePlayerNCpuPosArrayIdem(playerNCpuPosArray, newPlayerPos, newCpuPos);
+
             foreach (string stringChar in playerNCpuPosArray)
-            {
-                Console.Write(stringChar);
-            }
+                {
+                    Console.Write(stringChar);
+                }
 
             Console.WriteLine();
 
@@ -56,12 +141,29 @@ internal class DiceRaceGame
                 }
             }
 
-            Console.WriteLine();
-            Console.WriteLine("____________________________________");
-            Console.WriteLine();
-            Console.Write("Type enter to continue");
-            Console.ReadLine();
+            do
+            {
+                Console.WriteLine();
+                Console.WriteLine("___________________________________");
+                Console.WriteLine();
+                Console.WriteLine(" Press (ENTER) tgt next round.");
+                Console.WriteLine("___________________________________");
+            } while (Console.ReadKey().Key != ConsoleKey.Enter);
         } while (true);
+    }
+
+    public static void AppMenuHelp()
+    {
+        Console.Clear();
+
+        Console.WriteLine("____________________________________________");
+        Console.WriteLine();
+        Console.WriteLine(" Under construction. Try on next patch.");
+        Console.WriteLine("____________________________________________");
+        Thread.Sleep(2000);
+
+        Console.Clear();
+        AppMenuMain();
     }
 
     public static int RunRollDice()
@@ -76,12 +178,14 @@ internal class DiceRaceGame
 
     public static int UpdatePlayerNCpuPosArrayPlayer(string[] playerNCpuPosArray, int playerPos)
     {
+
         for (int value = 0; value < playerNCpuPosArray.Length; value++)
         {
             if (value == playerPos)
             {
                 if (playerNCpuPosArray[playerPos] == " ___ ")
                 {
+                    playerPos = RunEventCheckerPlayer(playerPos);
                     int constPlayerPos = playerPos;
                     playerNCpuPosArray[constPlayerPos -1] = " _*_ ";
                 }
@@ -98,6 +202,7 @@ internal class DiceRaceGame
             {
                 if (playerNCpuPosArray[cpuPos] == " ___ ")
                 {
+                    cpuPos = RunEventCheckerCpu(cpuPos);
                     int constCpuPos = cpuPos;
                     playerNCpuPosArray[constCpuPos - 1] = " _+_ ";
                 }
@@ -106,7 +211,7 @@ internal class DiceRaceGame
         return cpuPos;
     }
 
-    private static string[] UpdatePlayerNCpuPosArrayIdem(string[] playerNCpuPosArray, int newPlayerPos, int newCpuPos)
+    public static string[] UpdatePlayerNCpuPosArrayIdem(string[] playerNCpuPosArray, int newPlayerPos, int newCpuPos)
     {
         for (int value = 0; value < playerNCpuPosArray.Length; value++)
         {
@@ -115,7 +220,7 @@ internal class DiceRaceGame
                 int constValue = newPlayerPos;
                 playerNCpuPosArray[constValue -1] = " _~_ ";
 
-                Console.WriteLine("Player and CPU are on the same unit!");
+                Console.WriteLine(" Player and CPU are on the same unit!");
                 break;
 
             }
@@ -130,24 +235,24 @@ internal class DiceRaceGame
         {
             case 5:
                 playerPos += 4;
-                Console.WriteLine("(Player) Advance event found! plus 4");
+                Console.WriteLine(" (Player) Advance event found! plus 4");
                 break;
 
             case 10:
                 playerPos += 4;
-                Console.WriteLine("(Player) Advance event found! plus 4");
+                Console.WriteLine(" (Player) Advance event found! plus 4");
 
                 break;
 
             case 15:
                 playerPos += 2;
-                Console.WriteLine("(Player) Advance event found! plus 2");
+                Console.WriteLine(" (Player) Advance event found! plus 2");
 
                 break;
 
             case 25:
                 playerPos += 1;
-                Console.WriteLine("(Player) Advance event found! plus 1");
+                Console.WriteLine(" (Player) Advance event found! plus 1");
                 break;
         }
 
@@ -156,17 +261,17 @@ internal class DiceRaceGame
         {
             case 7:
                 playerPos -= 2;
-                Console.WriteLine("(Player) Return event found! less 2");
+                Console.WriteLine(" (Player) Return event found! less 2");
                 break;
 
             case 13:
                 playerPos -= 3;
-                Console.WriteLine("(Player) Return event found! less 3");
+                Console.WriteLine(" (Player) Return event found! less 3");
                 break;
 
             case 20:
                 playerPos -= 4;
-                Console.WriteLine("(Player) Return event found! less 4");
+                Console.WriteLine(" (Player) Return event found! less 4");
                 break;
         }
         return playerPos;
@@ -179,22 +284,22 @@ internal class DiceRaceGame
         {
             case 5:
                 cpuPos += 4;
-                Console.WriteLine("(CPU) Advance event found! plus 4");
+                Console.WriteLine(" (CPU) Advance event found! plus 4");
                 break;
 
             case 10:
                 cpuPos += 4;
-                Console.WriteLine("(CPU) Advance event found! plus 4");
+                Console.WriteLine(" (CPU) Advance event found! plus 4");
                 break;
 
             case 15:
-                Console.WriteLine("(CPU) Advance event found! plus 2");
+                Console.WriteLine(" (CPU) Advance event found! plus 2");
                 cpuPos += 2;
                 break;
 
             case 25:
                 cpuPos += 1;
-                Console.WriteLine("(CPU) Advance event found! plus 1");
+                Console.WriteLine(" (CPU) Advance event found! plus 1");
                 break;
         }
 
@@ -203,32 +308,84 @@ internal class DiceRaceGame
         {
             case 7:
                 cpuPos -= 1;
-                Console.WriteLine("(CPU) Return event found! less 1");
+                Console.WriteLine(" (CPU) Return event found! less 1");
                 break;
 
             case 13:
                 cpuPos -= 2;
-                Console.WriteLine("(CPU) Return event found! less 2");
+                Console.WriteLine(" (CPU) Return event found! less 2");
                 break;
 
             case 20:
                 cpuPos -= 3;
-                Console.WriteLine("(CPU) Return event found! less 3");
+                Console.WriteLine(" (CPU) Return event found! less 3");
                 break;
         }
         return cpuPos;
     }
 
-    public static bool RunEventCheckerDraw(int playerPos, int cpuPos)
+    public static void RunEventCheckerDraw(int playerPos, int cpuPos)
     {
         if (playerPos == 26 && cpuPos == 26) // in the gui it'll show that 27 is the draw
         {
-            Console.WriteLine("Both ended up on position number 27. The game draw.");
-            return true;
+            Console.WriteLine("_________________________________________________________");
+            Console.WriteLine();
+            Console.WriteLine(" Both ended up on position number 27. The game draw.");
+            Console.WriteLine("_________________________________________________________");
+
+            AppMenuEnd();
         }
-        else
+    }
+
+    public static void RunCheckIfGameEnded(int newPlayerPos, int newCpuPos)
+    {
+        if (newPlayerPos >= 30)
         {
-            return false;
+            Console.WriteLine("_____________________________________________");
+            Console.WriteLine();
+            Console.WriteLine(" Player got to 30 first! > Player Won! <");
+            Console.WriteLine("_____________________________________________");
+
+            AppMenuEnd();
+
+        }
+        else if (newCpuPos >= 30)
+        {
+            Console.WriteLine("_______________________________________");
+            Console.WriteLine();
+            Console.WriteLine(" Cpu got to 30 first! > Cpu Won! <");
+            Console.WriteLine("_______________________________________");
+
+            AppMenuEnd();
+
+        }
+    }
+
+    public static void AppMenuEnd()
+    {
+        Console.WriteLine("_____________________________");
+        Console.WriteLine();
+        Console.WriteLine(" > Game ended <");
+
+        Console.WriteLine();
+
+        Console.WriteLine(" Press (ENTER) tgt menu.");
+        Console.WriteLine("_____________________________");
+
+        if (Console.ReadKey().Key != ConsoleKey.Enter)
+        {
+            Console.Clear();
+
+            Console.WriteLine("_____________________________");
+            Console.WriteLine();
+            Console.WriteLine(" Invalid key. try again.");
+            Console.WriteLine("_____________________________");
+
+            AppMenuEnd();
+        } else
+        {
+            Console.Clear();
+            Program.Main();
         }
     }
 }
