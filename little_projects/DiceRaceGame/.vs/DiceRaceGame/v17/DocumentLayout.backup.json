@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\DiceRaceGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\hangman_game\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ynv\\Desktop\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63EEFDF0-C864-4BCE-9B73-272650A7486C}|DiceRaceGame.ConsoleApp\\DiceRaceGame.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\diceracegame\\diceracegame.consoleapp\\diceracegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,13 +35,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\hangman_game\\README.md",
-              "RelativeDocumentMoniker": "..\\hangman_game\\README.md",
-              "ToolTip": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\hangman_game\\README.md",
-              "RelativeToolTip": "..\\hangman_game\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAABFAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\ynv\\Desktop\\README.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\README.md",
+              "ToolTip": "C:\\Users\\ynv\\Desktop\\README.md",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-03-24T13:01:27.947Z",
+              "WhenOpened": "2025-03-24T13:21:51.976Z",
               "EditorCaption": ""
             },
             {
@@ -54,7 +54,8 @@
               "RelativeToolTip": "DiceRaceGame.ConsoleApp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:51:59.717Z"
+              "WhenOpened": "2025-03-20T17:51:59.717Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
