@@ -25,8 +25,6 @@
             Console.WriteLine($"Comission (per total sales) > {comissionPercent}%");
             Console.WriteLine();
             Console.WriteLine($"Your salary + comission is ${salaryPlusComission}");
-
-
         }
     }
 }
