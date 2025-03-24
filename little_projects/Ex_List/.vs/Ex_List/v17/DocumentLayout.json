@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0691F60-6953-4FC1-93A6-9AD0EFEFA6F6}|Ex3.ConsoleApp\\Ex3.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\ex3.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0691F60-6953-4FC1-93A6-9AD0EFEFA6F6}|Ex3.ConsoleApp\\Ex3.ConsoleApp.csproj|solutionrelative:ex3.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68715F33-02E1-4E52-93E5-9C8EB557BA3B}|Ex2.ConsoleApp\\Ex2.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\ex2.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68715F33-02E1-4E52-93E5-9C8EB557BA3B}|Ex2.ConsoleApp\\Ex2.ConsoleApp.csproj|solutionrelative:ex2.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F30BD035-CE6D-4327-A8F7-7F0341F41DB7}|Ex1.ConsoleApp\\Ex1.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\ex1.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F30BD035-CE6D-4327-A8F7-7F0341F41DB7}|Ex1.ConsoleApp\\Ex1.ConsoleApp.csproj|solutionrelative:ex1.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C3A638D-5B42-419F-9E71-EC3F1FD8DB0D}|Ex4.ConsoleApp\\Ex4.ConsoleApp.csproj|c:\\users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\ex4.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3A638D-5B42-419F-9E71-EC3F1FD8DB0D}|Ex4.ConsoleApp\\Ex4.ConsoleApp.csproj|solutionrelative:ex4.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,39 +28,14 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex3.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "Ex3.ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex3.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "Ex3.ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex4.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "Ex4.ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex4.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "Ex4.ConsoleApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T00:32:57.834Z",
+              "WhenOpened": "2025-03-24T00:55:04.846Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex2.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "Ex2.ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex2.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "Ex2.ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T00:02:18.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex1.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "Ex1.ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex1.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "Ex1.ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T23:34:21.428Z"
             }
           ]
         }
