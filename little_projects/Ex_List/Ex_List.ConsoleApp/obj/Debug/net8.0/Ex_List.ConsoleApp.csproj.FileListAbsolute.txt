@@ -1,0 +1,5 @@
+C:\Users\ynv\source\repos\prog-academy\little_projects\ex_list\Ex_List.ConsoleApp\obj\Debug\net8.0\Ex_List.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ynv\source\repos\prog-academy\little_projects\ex_list\Ex_List.ConsoleApp\obj\Debug\net8.0\Ex_List.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\ex_list\Ex_List.ConsoleApp\obj\Debug\net8.0\Ex_List.ConsoleApp.AssemblyInfo.cs
+C:\Users\ynv\source\repos\prog-academy\little_projects\ex_list\Ex_List.ConsoleApp\obj\Debug\net8.0\Ex_List.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\ex_list\Ex_List.ConsoleApp\obj\Debug\net8.0\Ex_List.ConsoleApp.sourcelink.json
