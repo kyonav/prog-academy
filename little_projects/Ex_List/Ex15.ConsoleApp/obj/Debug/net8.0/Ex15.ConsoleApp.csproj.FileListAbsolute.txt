@@ -1,0 +1,15 @@
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\bin\Debug\net8.0\Ex15.ConsoleApp.exe
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\bin\Debug\net8.0\Ex15.ConsoleApp.deps.json
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\bin\Debug\net8.0\Ex15.ConsoleApp.runtimeconfig.json
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\bin\Debug\net8.0\Ex15.ConsoleApp.dll
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\bin\Debug\net8.0\Ex15.ConsoleApp.pdb
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.AssemblyInfo.cs
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.sourcelink.json
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.dll
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\refint\Ex15.ConsoleApp.dll
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.pdb
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\Ex15.ConsoleApp.genruntimeconfig.cache
+C:\Users\ynv\source\repos\prog-academy\little_projects\Ex_List\Ex15.ConsoleApp\obj\Debug\net8.0\ref\Ex15.ConsoleApp.dll

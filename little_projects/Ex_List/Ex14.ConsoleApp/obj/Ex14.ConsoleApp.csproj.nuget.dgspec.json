@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj": {}
+    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj": {
+    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj",
         "projectName": "Ex14.ConsoleApp",
-        "projectPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj",
+        "projectPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex14.ConsoleApp\\Ex14.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\ynv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex14.ConsoleApp\\obj\\",
+        "outputPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex14.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
