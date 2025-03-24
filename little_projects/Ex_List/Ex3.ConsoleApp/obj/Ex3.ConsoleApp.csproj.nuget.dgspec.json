@@ -11,7 +11,7 @@
         "projectName": "Ex3.ConsoleApp",
         "projectPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex3.ConsoleApp\\Ex3.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\ynv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex3.ConsoleApp\\obj\\",
+        "outputPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex3.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
