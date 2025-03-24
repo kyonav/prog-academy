@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex14.ConsoleApp", "Ex14.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex15.ConsoleApp", "Ex15.ConsoleApp\Ex15.ConsoleApp.csproj", "{D5F5CAC2-A8B0-4C8C-96E8-2363FBA51C67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex16.ConsoleApp", "Ex16.ConsoleApp\Ex16.ConsoleApp.csproj", "{4B73035C-8F46-44F8-8FC0-D5B38F1E05C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{D5F5CAC2-A8B0-4C8C-96E8-2363FBA51C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5F5CAC2-A8B0-4C8C-96E8-2363FBA51C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5F5CAC2-A8B0-4C8C-96E8-2363FBA51C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B73035C-8F46-44F8-8FC0-D5B38F1E05C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B73035C-8F46-44F8-8FC0-D5B38F1E05C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B73035C-8F46-44F8-8FC0-D5B38F1E05C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B73035C-8F46-44F8-8FC0-D5B38F1E05C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
