@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj": {}
+    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj": {
+    "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj",
         "projectName": "Ex21.ConsoleApp",
-        "projectPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj",
+        "projectPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\ex_list\\Ex21.ConsoleApp\\Ex21.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\ynv\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ynv\\source\\repos\\prog-academy\\little_projects\\Ex_List\\Ex21.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
